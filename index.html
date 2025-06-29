@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meal Finder</title>
+  <meta name="description" content="Find meals by name or ingredient." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Search Form -->
+  <form>
+    <input class="input" type="text" placeholder="Search meals..." />
+    <button type="submit">
+      <i class="fa-solid fa-magnifying-glass magnifier"></i>
+    </button>
+  </form>
+
+  <!-- Result Container -->
+  <div class="container">
+    <div class="img-with-text">
+      <div class="img"></div>
+      <div class="text-overlay">
+        <h1 class="title">Food Name</h1>
+        <p class="info">Instructions</p>
+        <button class="main-btn">$20 Order</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ingredients Output -->
+  <ul class="ingredients"></ul>
+
+  <script src="app.js"></script>
+</body>
+</html>
